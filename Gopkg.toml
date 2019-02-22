@@ -32,7 +32,7 @@
 # To avoid pulling old gorp version, we use master of our fork
 [[constraint]]
   name = "github.com/mattermost/gorp"
-  branch = "master"
+  branch = "mm-14140"
 
 # Fork for adding our own method to viper EnvSettings
 [[constraint]]
