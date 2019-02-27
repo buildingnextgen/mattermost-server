@@ -117,7 +117,7 @@
   },
   {
     "id": "api.admin.test_email.body",
-    "translation": "It appears your Mattermost email is setup correctly!"
+    "translation": "It appears your {{ .SiteName }} email is setup correctly!"
   },
   {
     "id": "api.admin.test_email.missing_server",
@@ -129,7 +129,7 @@
   },
   {
     "id": "api.admin.test_email.subject",
-    "translation": "Mattermost - Testing Email Settings"
+    "translation": "{{ .SiteName }} - Testing Email Settings"
   },
   {
     "id": "api.admin.test_s3.missing_s3_bucket",
@@ -361,7 +361,7 @@
   },
   {
     "id": "api.command.execute_command.create_post_failed.app_error",
-    "translation": "Command '{{.Trigger}}' failed to post response. Please contact your System Administrator."
+    "translation": "Command '{{.Trigger}}' failed to post response. Please contact {{ .SiteName }}."
   },
   {
     "id": "api.command.execute_command.debug",
@@ -393,7 +393,7 @@
   },
   {
     "id": "api.command.invite_people.desc",
-    "translation": "Send an email invite to your Mattermost team"
+    "translation": "Send an email invite to your {{ .SiteName }} team"
   },
   {
     "id": "api.command.invite_people.email_invitations_off",
@@ -676,7 +676,7 @@
   },
   {
     "id": "api.command_help.desc",
-    "translation": "Open the Mattermost help page"
+    "translation": "Open the {{ .SiteName }} help page"
   },
   {
     "id": "api.command_help.name",
@@ -688,7 +688,7 @@
   },
   {
     "id": "api.command_invite.channel.error",
-    "translation": "Could not find the channel {{.Channel}}. Please use the [channel handle](https://about.mattermost.com/default-channel-handle-documentation) to identify channels."
+    "translation": "Could not find the channel {{.Channel}}. Please use the [channel handle](https://about.{{ .SiteName }}.com/default-channel-handle-documentation) to identify channels."
   },
   {
     "id": "api.command_invite.desc",
@@ -780,7 +780,7 @@
   },
   {
     "id": "api.command_logout.desc",
-    "translation": "Logout of Mattermost"
+    "translation": "Logout of {{ .SiteName }}"
   },
   {
     "id": "api.command_logout.fail_message",
@@ -836,7 +836,7 @@
   },
   {
     "id": "api.command_mute.error",
-    "translation": "Could not find the channel {{.Channel}}. Please use the [channel handle](https://about.mattermost.com/default-channel-handle-documentation) to identify channels."
+    "translation": "Could not find the channel {{.Channel}}. Please use the [channel handle](https://about.{{ .SiteName }}.com/default-channel-handle-documentation) to identify channels."
   },
   {
     "id": "api.command_mute.hint",
@@ -848,7 +848,7 @@
   },
   {
     "id": "api.command_mute.no_channel.error",
-    "translation": "Could not find the specified channel. Please use the [channel handle](https://about.mattermost.com/default-channel-handle-documentation) to identify channels."
+    "translation": "Could not find the specified channel. Please use the [channel handle](https://about.{{ .SiteName }}.com/default-channel-handle-documentation) to identify channels."
   },
   {
     "id": "api.command_mute.not_member.error",
@@ -1540,7 +1540,7 @@
   },
   {
     "id": "api.post.update_post.permissions_time_limit.app_error",
-    "translation": "Post edit is only allowed for {{.timeLimit}} seconds. Please ask your System Administrator for details."
+    "translation": "Post edit is only allowed for {{.timeLimit}} seconds. Please ask {{ .SiteName }} for details."
   },
   {
     "id": "api.post.update_post.system_message.app_error",
@@ -1648,7 +1648,7 @@
   },
   {
     "id": "api.slackimport.slack_add_channels.merge",
-    "translation": "The Slack channel {{.DisplayName}} already exists as an active Mattermost channel. Both channels have been merged.\r\n"
+    "translation": "The Slack channel {{.DisplayName}} already exists as an active {{ .SiteName }} channel. Both channels have been merged.\r\n"
   },
   {
     "id": "api.slackimport.slack_add_users.created",
@@ -1660,11 +1660,11 @@
   },
   {
     "id": "api.slackimport.slack_add_users.merge_existing",
-    "translation": "Slack user merged with an existing Mattermost user with matching email {{.Email}} and username {{.Username}}.\r\n"
+    "translation": "Slack user merged with an existing {{ .SiteName }} user with matching email {{.Email}} and username {{.Username}}.\r\n"
   },
   {
     "id": "api.slackimport.slack_add_users.merge_existing_failed",
-    "translation": "Slack user merged with an existing Mattermost user with matching email {{.Email}} and username {{.Username}}, but was unable to add the user to their team.\r\n"
+    "translation": "Slack user merged with an existing {{ .SiteName }} user with matching email {{.Email}} and username {{.Username}}, but was unable to add the user to their team.\r\n"
   },
   {
     "id": "api.slackimport.slack_add_users.missing_email_address",
@@ -1676,7 +1676,7 @@
   },
   {
     "id": "api.slackimport.slack_import.log",
-    "translation": "Mattermost Slack Import Log\r\n"
+    "translation": "{{ .SiteName }} Slack Import Log\r\n"
   },
   {
     "id": "api.slackimport.slack_import.note1",
@@ -1764,7 +1764,7 @@
   },
   {
     "id": "api.team.invite_members.invalid_email.app_error",
-    "translation": "The following email addresses do not belong to an accepted domain: {{.Addresses}}. Please contact your System Administrator for details."
+    "translation": "The following email addresses do not belong to an accepted domain: {{.Addresses}}. Please contact {{ .SiteName }} for details."
   },
   {
     "id": "api.team.invite_members.member",
@@ -1776,11 +1776,11 @@
   },
   {
     "id": "api.team.is_team_creation_allowed.disabled.app_error",
-    "translation": "Team creation has been disabled. Please ask your System Administrator for details."
+    "translation": "Team creation has been disabled. Please ask {{ .SiteName }} for details."
   },
   {
     "id": "api.team.is_team_creation_allowed.domain.app_error",
-    "translation": "Email must be from a specific domain (e.g. @example.com). Please ask your System Administrator for details."
+    "translation": "Email must be from a specific domain (e.g. @example.com). Please ask {{ .SiteName }} for details."
   },
   {
     "id": "api.team.join_team.post_and_forget",
@@ -1868,7 +1868,7 @@
   },
   {
     "id": "api.team.update_restricted_domains.mismatch.app_error",
-    "translation": "Restricting team to {{ .Domain }} is not allowed by the system config. Please contact your system administrator."
+    "translation": "Restricting team to {{ .Domain }} is not allowed by the system config. Please contact {{ .SiteName }}."
   },
   {
     "id": "api.team.update_team_scheme.license.error",
@@ -1888,7 +1888,7 @@
   },
   {
     "id": "api.templates.deactivate_body.warning",
-    "translation": "If this change was not initiated by you or you want to reactivate your account, contact your system administrator."
+    "translation": "If this change was not initiated by you or you want to reactivate your account, contact {{ .SiteName }}."
   },
   {
     "id": "api.templates.deactivate_subject",
@@ -1952,7 +1952,7 @@
   },
   {
     "id": "api.templates.invite_body.extra_info",
-    "translation": "Mattermost lets you share messages and files from your PC or phone, with instant search and archiving. After you’ve joined [[{{.TeamDisplayName}}]], you can sign-in to your new team and access these features anytime from the web address:"
+    "translation": "{{ .SiteName }} lets you share messages and files from your PC or phone, with instant search and archiving. After you’ve joined [[{{.TeamDisplayName}}]], you can sign-in to your new team and access these features anytime from the web address:"
   },
   {
     "id": "api.templates.invite_body.info",
@@ -2096,7 +2096,7 @@
   },
   {
     "id": "api.templates.welcome_body.info3",
-    "translation": "Mattermost lets you share messages and files from your PC or phone, with instant search and archiving."
+    "translation": "{{ .SiteName }} lets you share messages and files from your PC or phone, with instant search and archiving."
   },
   {
     "id": "api.templates.welcome_body.title",
@@ -2408,7 +2408,7 @@
   },
   {
     "id": "api.user.update_active.not_enable.app_error",
-    "translation": "You cannot deactivate yourself because this feature is not enabled. Please contact your System Administrator."
+    "translation": "You cannot deactivate yourself because this feature is not enabled. Please contact {{ .SiteName }}."
   },
   {
     "id": "api.user.update_active.permissions.app_error",
@@ -3284,7 +3284,7 @@
   },
   {
     "id": "app.team.join_user_to_team.max_accounts.app_error",
-    "translation": "This team has reached the maximum number of allowed accounts. Contact your System Administrator to set a higher limit."
+    "translation": "This team has reached the maximum number of allowed accounts. Contact {{ .SiteName }} to set a higher limit."
   },
   {
     "id": "app.user.complete_switch_with_oauth.blank_email.app_error",
@@ -3292,7 +3292,7 @@
   },
   {
     "id": "app.user_access_token.disabled",
-    "translation": "Personal access tokens are disabled on this server. Please contact your system administrator for details."
+    "translation": "Personal access tokens are disabled on this server. Please contact {{ .SiteName }} for details."
   },
   {
     "id": "app.user_access_token.invalid_or_missing",
@@ -3324,7 +3324,7 @@
   },
   {
     "id": "cli.license.critical",
-    "translation": "Feature requires an upgrade to Enterprise Edition and the inclusion of a license key. Please contact your System Administrator."
+    "translation": "Feature requires an upgrade to Enterprise Edition and the inclusion of a license key. Please contact {{ .SiteName }}."
   },
   {
     "id": "ent.account_migration.get_all_failed",
@@ -3392,7 +3392,7 @@
   },
   {
     "id": "ent.compliance.licence_disable.app_error",
-    "translation": "Compliance functionality disabled by current license. Please contact your system administrator about upgrading your enterprise license."
+    "translation": "Compliance functionality disabled by current license. Please contact {{ .SiteName }} about upgrading your enterprise license."
   },
   {
     "id": "ent.compliance.run_export.template_watcher.appError",
@@ -3536,7 +3536,7 @@
   },
   {
     "id": "ent.ldap.do_login.licence_disable.app_error",
-    "translation": "AD/LDAP functionality disabled by current license. Please contact your system administrator about upgrading your enterprise license."
+    "translation": "AD/LDAP functionality disabled by current license. Please contact {{ .SiteName }} about upgrading your enterprise license."
   },
   {
     "id": "ent.ldap.do_login.matched_to_many_users.app_error",
@@ -3552,7 +3552,7 @@
   },
   {
     "id": "ent.ldap.do_login.user_filtered.app_error",
-    "translation": "Your AD/LDAP account does not have permission to use this Mattermost server. Please ask your System Administrator to check the AD/LDAP user filter."
+    "translation": "Your AD/LDAP account does not have permission to use this {{ .SiteName }} server. Please ask {{ .SiteName }} to check the AD/LDAP user filter."
   },
   {
     "id": "ent.ldap.do_login.user_not_registered.app_error",
@@ -3564,7 +3564,7 @@
   },
   {
     "id": "ent.ldap.syncronize.search_failure.app_error",
-    "translation": "Failed to search users in AD/LDAP. Test if the Mattermost server can connect to your AD/LDAP server and try again."
+    "translation": "Failed to search users in AD/LDAP. Test if the {{ .SiteName }} server can connect to your AD/LDAP server and try again."
   },
   {
     "id": "ent.ldap.validate_filter.app_error",
@@ -3640,39 +3640,39 @@
   },
   {
     "id": "ent.migration.migratetosaml.username_already_used_by_other_user",
-    "translation": "Username already used by another Mattermost user."
+    "translation": "Username already used by another {{ .SiteName }} user."
   },
   {
     "id": "ent.saml.attribute.app_error",
-    "translation": "SAML login was unsuccessful because one of the attributes is incorrect. Please contact your System Administrator."
+    "translation": "SAML login was unsuccessful because one of the attributes is incorrect. Please contact {{ .SiteName }}."
   },
   {
     "id": "ent.saml.build_request.app_error",
-    "translation": "An error occurred while initiating the request to the Identity Provider. Please contact your System Administrator."
+    "translation": "An error occurred while initiating the request to the Identity Provider. Please contact {{ .SiteName }}."
   },
   {
     "id": "ent.saml.build_request.encoding.app_error",
-    "translation": "An error occurred while encoding the request for the Identity Provider. Please contact your System Administrator."
+    "translation": "An error occurred while encoding the request for the Identity Provider. Please contact {{ .SiteName }}."
   },
   {
     "id": "ent.saml.configure.encryption_not_enabled.app_error",
-    "translation": "SAML login was unsuccessful because encryption is not enabled. Please contact your System Administrator."
+    "translation": "SAML login was unsuccessful because encryption is not enabled. Please contact {{ .SiteName }}."
   },
   {
     "id": "ent.saml.configure.load_idp_cert.app_error",
-    "translation": "Identity Provider Public Certificate File was not found. Please contact your System Administrator."
+    "translation": "Identity Provider Public Certificate File was not found. Please contact {{ .SiteName }}."
   },
   {
     "id": "ent.saml.configure.load_private_key.app_error",
-    "translation": "SAML login was unsuccessful because the Service Provider Private Key was not found. Please contact your System Administrator."
+    "translation": "SAML login was unsuccessful because the Service Provider Private Key was not found. Please contact {{ .SiteName }}."
   },
   {
     "id": "ent.saml.configure.not_encrypted_response.app_error",
-    "translation": "SAML login was unsuccessful as the Identity Provider response is not encrypted. Please contact your System Administrator."
+    "translation": "SAML login was unsuccessful as the Identity Provider response is not encrypted. Please contact {{ .SiteName }}."
   },
   {
     "id": "ent.saml.do_login.decrypt.app_error",
-    "translation": "SAML login was unsuccessful because an error occurred while decrypting the response from the Identity Provider. Please contact your System Administrator."
+    "translation": "SAML login was unsuccessful because an error occurred while decrypting the response from the Identity Provider. Please contact {{ .SiteName }}."
   },
   {
     "id": "ent.saml.do_login.empty_response.app_error",
@@ -3680,11 +3680,11 @@
   },
   {
     "id": "ent.saml.do_login.parse.app_error",
-    "translation": "An error occurred while parsing the response from the Identity Provider. Please contact your System Administrator."
+    "translation": "An error occurred while parsing the response from the Identity Provider. Please contact {{ .SiteName }}."
   },
   {
     "id": "ent.saml.do_login.validate.app_error",
-    "translation": "An error occurred while validating the response from the Identity Provider. Please contact your System Administrator."
+    "translation": "An error occurred while validating the response from the Identity Provider. Please contact {{ .SiteName }}."
   },
   {
     "id": "ent.saml.license_disable.app_error",
@@ -3727,8 +3727,8 @@
     "translation": "Unable to get channels"
   },
   {
-    "id": "mattermost.bulletin.subject",
-    "translation": "Mattermost Security Bulletin"
+    "id": "{{ .SiteName }}.bulletin.subject",
+    "translation": "{{ .SiteName }} Security Bulletin"
   },
   {
     "id": "mfa.activate.authenticate.app_error",
@@ -4964,7 +4964,7 @@
   },
   {
     "id": "oauth.gitlab.tos.error",
-    "translation": "GitLab's Terms of Service have updated. Please go to gitlab.com to accept them and then try logging into Mattermost again."
+    "translation": "GitLab's Terms of Service have updated. Please go to gitlab.com to accept them and then try logging into {{ .SiteName }} again."
   },
   {
     "id": "plugin_api.get_file_link.disabled.app_error",
@@ -5816,7 +5816,7 @@
   },
   {
     "id": "store.sql_post.search.disabled",
-    "translation": "Searching has been disabled on this server. Please contact your System Administrator."
+    "translation": "Searching has been disabled on this server. Please contact {{ .SiteName }}."
   },
   {
     "id": "store.sql_post.update.app_error",
@@ -6424,7 +6424,7 @@
   },
   {
     "id": "store.sql_user.save.max_accounts.app_error",
-    "translation": "This team has reached the maximum number of allowed accounts. Contact your System Administrator to set a higher limit."
+    "translation": "This team has reached the maximum number of allowed accounts. Contact {{ .SiteName }} to set a higher limit."
   },
   {
     "id": "store.sql_user.save.member_count.app_error",
@@ -6664,7 +6664,7 @@
   },
   {
     "id": "utils.config.add_client_locale.app_error",
-    "translation": "Unable to load mattermost configuration file: Adding DefaultClientLocale to AvailableLocales."
+    "translation": "Unable to load {{ .SiteName }} configuration file: Adding DefaultClientLocale to AvailableLocales."
   },
   {
     "id": "utils.config.load_config.decoding.panic",
@@ -6680,15 +6680,15 @@
   },
   {
     "id": "utils.config.supported_available_locales.app_error",
-    "translation": "Unable to load mattermost configuration file: AvailableLocales must include DefaultClientLocale. Setting AvailableLocales to all locales as default value."
+    "translation": "Unable to load {{ .SiteName }} configuration file: AvailableLocales must include DefaultClientLocale. Setting AvailableLocales to all locales as default value."
   },
   {
     "id": "utils.config.supported_client_locale.app_error",
-    "translation": "Unable to load mattermost configuration file: DefaultClientLocale must be one of the supported locales. Setting DefaultClientLocale to en as default value."
+    "translation": "Unable to load {{ .SiteName }} configuration file: DefaultClientLocale must be one of the supported locales. Setting DefaultClientLocale to en as default value."
   },
   {
     "id": "utils.config.supported_server_locale.app_error",
-    "translation": "Unable to load mattermost configuration file: DefaultServerLocale must be one of the supported locales. Setting DefaultServerLocale to en as default value."
+    "translation": "Unable to load {{ .SiteName }} configuration file: DefaultServerLocale must be one of the supported locales. Setting DefaultServerLocale to en as default value."
   },
   {
     "id": "utils.file.list_directory.local.app_error",
