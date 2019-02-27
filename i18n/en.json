@@ -117,7 +117,7 @@
   },
   {
     "id": "api.admin.test_email.body",
-    "translation": "It appears your Mattermost email is setup correctly!"
+    "translation": "It appears your {{ .SiteName }} email is setup correctly!"
   },
   {
     "id": "api.admin.test_email.missing_server",
@@ -129,7 +129,7 @@
   },
   {
     "id": "api.admin.test_email.subject",
-    "translation": "Mattermost - Testing Email Settings"
+    "translation": "{{ .SiteName }} - Testing Email Settings"
   },
   {
     "id": "api.admin.test_s3.missing_s3_bucket",
@@ -393,7 +393,7 @@
   },
   {
     "id": "api.command.invite_people.desc",
-    "translation": "Send an email invite to your Mattermost team"
+    "translation": "Send an email invite to your {{ .SiteName }} team"
   },
   {
     "id": "api.command.invite_people.email_invitations_off",
@@ -676,7 +676,7 @@
   },
   {
     "id": "api.command_help.desc",
-    "translation": "Open the Mattermost help page"
+    "translation": "Open the {{ .SiteName }} help page"
   },
   {
     "id": "api.command_help.name",
@@ -688,7 +688,7 @@
   },
   {
     "id": "api.command_invite.channel.error",
-    "translation": "Could not find the channel {{.Channel}}. Please use the [channel handle](https://about.mattermost.com/default-channel-handle-documentation) to identify channels."
+    "translation": "Could not find the channel {{.Channel}}. Please use the [channel handle](https://about.{{ .SiteName }}.com/default-channel-handle-documentation) to identify channels."
   },
   {
     "id": "api.command_invite.desc",
@@ -780,7 +780,7 @@
   },
   {
     "id": "api.command_logout.desc",
-    "translation": "Logout of Mattermost"
+    "translation": "Logout of {{ .SiteName }}"
   },
   {
     "id": "api.command_logout.fail_message",
@@ -836,7 +836,7 @@
   },
   {
     "id": "api.command_mute.error",
-    "translation": "Could not find the channel {{.Channel}}. Please use the [channel handle](https://about.mattermost.com/default-channel-handle-documentation) to identify channels."
+    "translation": "Could not find the channel {{.Channel}}. Please use the [channel handle](https://about.{{ .SiteName }}.com/default-channel-handle-documentation) to identify channels."
   },
   {
     "id": "api.command_mute.hint",
@@ -848,7 +848,7 @@
   },
   {
     "id": "api.command_mute.no_channel.error",
-    "translation": "Could not find the specified channel. Please use the [channel handle](https://about.mattermost.com/default-channel-handle-documentation) to identify channels."
+    "translation": "Could not find the specified channel. Please use the [channel handle](https://about.{{ .SiteName }}.com/default-channel-handle-documentation) to identify channels."
   },
   {
     "id": "api.command_mute.not_member.error",
@@ -1648,7 +1648,7 @@
   },
   {
     "id": "api.slackimport.slack_add_channels.merge",
-    "translation": "The Slack channel {{.DisplayName}} already exists as an active Mattermost channel. Both channels have been merged.\r\n"
+    "translation": "The Slack channel {{.DisplayName}} already exists as an active {{ .SiteName }} channel. Both channels have been merged.\r\n"
   },
   {
     "id": "api.slackimport.slack_add_users.created",
@@ -1660,11 +1660,11 @@
   },
   {
     "id": "api.slackimport.slack_add_users.merge_existing",
-    "translation": "Slack user merged with an existing Mattermost user with matching email {{.Email}} and username {{.Username}}.\r\n"
+    "translation": "Slack user merged with an existing {{ .SiteName }} user with matching email {{.Email}} and username {{.Username}}.\r\n"
   },
   {
     "id": "api.slackimport.slack_add_users.merge_existing_failed",
-    "translation": "Slack user merged with an existing Mattermost user with matching email {{.Email}} and username {{.Username}}, but was unable to add the user to their team.\r\n"
+    "translation": "Slack user merged with an existing {{ .SiteName }} user with matching email {{.Email}} and username {{.Username}}, but was unable to add the user to their team.\r\n"
   },
   {
     "id": "api.slackimport.slack_add_users.missing_email_address",
@@ -1676,7 +1676,7 @@
   },
   {
     "id": "api.slackimport.slack_import.log",
-    "translation": "Mattermost Slack Import Log\r\n"
+    "translation": "{{ .SiteName }} Slack Import Log\r\n"
   },
   {
     "id": "api.slackimport.slack_import.note1",
@@ -1952,7 +1952,7 @@
   },
   {
     "id": "api.templates.invite_body.extra_info",
-    "translation": "Mattermost lets you share messages and files from your PC or phone, with instant search and archiving. After you’ve joined [[{{.TeamDisplayName}}]], you can sign-in to your new team and access these features anytime from the web address:"
+    "translation": "{{ .SiteName }} lets you share messages and files from your PC or phone, with instant search and archiving. After you’ve joined [[{{.TeamDisplayName}}]], you can sign-in to your new team and access these features anytime from the web address:"
   },
   {
     "id": "api.templates.invite_body.info",
@@ -2096,7 +2096,7 @@
   },
   {
     "id": "api.templates.welcome_body.info3",
-    "translation": "Mattermost lets you share messages and files from your PC or phone, with instant search and archiving."
+    "translation": "{{ .SiteName }} lets you share messages and files from your PC or phone, with instant search and archiving."
   },
   {
     "id": "api.templates.welcome_body.title",
@@ -3552,7 +3552,7 @@
   },
   {
     "id": "ent.ldap.do_login.user_filtered.app_error",
-    "translation": "Your AD/LDAP account does not have permission to use this Mattermost server. Please ask {{ .SiteName }} to check the AD/LDAP user filter."
+    "translation": "Your AD/LDAP account does not have permission to use this {{ .SiteName }} server. Please ask {{ .SiteName }} to check the AD/LDAP user filter."
   },
   {
     "id": "ent.ldap.do_login.user_not_registered.app_error",
@@ -3564,7 +3564,7 @@
   },
   {
     "id": "ent.ldap.syncronize.search_failure.app_error",
-    "translation": "Failed to search users in AD/LDAP. Test if the Mattermost server can connect to your AD/LDAP server and try again."
+    "translation": "Failed to search users in AD/LDAP. Test if the {{ .SiteName }} server can connect to your AD/LDAP server and try again."
   },
   {
     "id": "ent.ldap.validate_filter.app_error",
@@ -3640,7 +3640,7 @@
   },
   {
     "id": "ent.migration.migratetosaml.username_already_used_by_other_user",
-    "translation": "Username already used by another Mattermost user."
+    "translation": "Username already used by another {{ .SiteName }} user."
   },
   {
     "id": "ent.saml.attribute.app_error",
@@ -3727,8 +3727,8 @@
     "translation": "Unable to get channels"
   },
   {
-    "id": "mattermost.bulletin.subject",
-    "translation": "Mattermost Security Bulletin"
+    "id": "{{ .SiteName }}.bulletin.subject",
+    "translation": "{{ .SiteName }} Security Bulletin"
   },
   {
     "id": "mfa.activate.authenticate.app_error",
@@ -4964,7 +4964,7 @@
   },
   {
     "id": "oauth.gitlab.tos.error",
-    "translation": "GitLab's Terms of Service have updated. Please go to gitlab.com to accept them and then try logging into Mattermost again."
+    "translation": "GitLab's Terms of Service have updated. Please go to gitlab.com to accept them and then try logging into {{ .SiteName }} again."
   },
   {
     "id": "plugin_api.get_file_link.disabled.app_error",
@@ -6664,7 +6664,7 @@
   },
   {
     "id": "utils.config.add_client_locale.app_error",
-    "translation": "Unable to load mattermost configuration file: Adding DefaultClientLocale to AvailableLocales."
+    "translation": "Unable to load {{ .SiteName }} configuration file: Adding DefaultClientLocale to AvailableLocales."
   },
   {
     "id": "utils.config.load_config.decoding.panic",
@@ -6680,15 +6680,15 @@
   },
   {
     "id": "utils.config.supported_available_locales.app_error",
-    "translation": "Unable to load mattermost configuration file: AvailableLocales must include DefaultClientLocale. Setting AvailableLocales to all locales as default value."
+    "translation": "Unable to load {{ .SiteName }} configuration file: AvailableLocales must include DefaultClientLocale. Setting AvailableLocales to all locales as default value."
   },
   {
     "id": "utils.config.supported_client_locale.app_error",
-    "translation": "Unable to load mattermost configuration file: DefaultClientLocale must be one of the supported locales. Setting DefaultClientLocale to en as default value."
+    "translation": "Unable to load {{ .SiteName }} configuration file: DefaultClientLocale must be one of the supported locales. Setting DefaultClientLocale to en as default value."
   },
   {
     "id": "utils.config.supported_server_locale.app_error",
-    "translation": "Unable to load mattermost configuration file: DefaultServerLocale must be one of the supported locales. Setting DefaultServerLocale to en as default value."
+    "translation": "Unable to load {{ .SiteName }} configuration file: DefaultServerLocale must be one of the supported locales. Setting DefaultServerLocale to en as default value."
   },
   {
     "id": "utils.file.list_directory.local.app_error",
